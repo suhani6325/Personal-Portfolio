@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services | Web Developer Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f4f4f4;
+      color: black;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #ffffff;
+      padding: 2rem;
+      text-align: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      color: #333;
+    }
+
+    .services-section {
+      max-width: 1200px;
+      margin: 3rem auto;
+      padding: 0 1.5rem;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    .service-card {
+      background: white;
+      padding: 2rem;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .service-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+    }
+
+    .service-card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      color: #1a1a1a;
+    }
+
+    .service-card p {
+      font-size: 1rem;
+      color: #333;
+    }
+
+    .highlight {
+      color: #FF6B6B;
+      font-weight: bold;
+    }
+
+    footer {
+      background-color: #ffffff;
+      padding: 1rem;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #555;
+      border-top: 1px solid #ddd;
+      margin-top: 3rem;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>My Services</h1>
+    <p>I craft websites that are <span class="highlight">fast</span>, <span class="highlight">responsive</span>, and <span class="highlight">user-friendly</span>.</p>
+  </header>
+
+  <section class="services-section">
+    <div class="services-grid">
+
+      <div class="service-card">
+        <h3>Custom Website Development</h3>
+        <p>I build fully customized websites tailored to your brand and business needs using HTML, CSS, JavaScript, and modern frameworks.</p>
+      </div>
+
+      <div class="service-card">
+        <h3>Responsive Design</h3>
+        <p>Your website will look stunning on all devices—desktops, tablets, and mobile—with a mobile-first, adaptive layout approach.</p>
+      </div>
+
+      <div class="service-card">
+        <h3>Portfolio & Landing Pages</h3>
+        <p>I specialize in high-conversion landing pages and visually appealing portfolios to showcase your work and attract attention.</p>
+      </div>
+
+      <div class="service-card">
+        <h3>Website Optimization</h3>
+        <p>I improve loading speed, performance, and SEO scores so your site is fast, secure, and ranks well on search engines.</p>
+      </div>
+
+      <div class="service-card">
+        <h3>Frontend Development</h3>
+        <p>Using technologies like React, Tailwind CSS, and vanilla JS, I bring ideas to life with smooth, dynamic user interfaces.</p>
+      </div>
+
+      <div class="service-card">
+        <h3>Maintenance & Updates</h3>
+        <p>I offer continuous support, from content updates to bug fixes and feature enhancements, ensuring your site is always up to date.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Your Name. All rights reserved.
+  </footer>
+<script src="script.js"></script>   
+</body>
+</html>
+
+
+<script src="script.js"></script>   
+
