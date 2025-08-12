@@ -1,0 +1,422 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,400;0,600;0,700;0,800;0,900;1,700;1,800;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    height: 100vh; 
+    margin: 0;
+    padding: 0;
+   background-color: hsl(227, 22%,40%);
+}
+.sidebar{
+    background-color: hsl(227, 20%,25%);
+    height:100vh;
+    font-family: "Playfair Display", serif;
+    transition: transform 0.3s ease-in;
+    position:fixed;
+   overflow: hidden;
+}
+.sidebar nav{
+    padding: 45px;
+}
+.sidebar nav li{
+    list-style: none;
+    font-size: 30px;
+    padding:33px 0;
+}
+.sidebar nav li a{
+    text-decoration: none;
+    background-color: hsl(227, 20%,25%);
+    color: black;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+.sidebar nav a:hover {
+    color: #F7D3D8; /* Light pink on hover */
+}
+.home{
+    background-color: black;
+}
+.main{
+    width: 80vw;
+    height: 100vh;
+}
+.container{
+     display: flex;
+     min-height: 100vh;
+     overflow: hidden;
+}
+.infoContainer{
+   /* height: 58vh;*/
+    width: 80vw;
+    margin:50px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.devInfo{
+    display: flex;
+   flex-direction:column;
+    justify-content: center;
+    align-items:flex-start;
+    text-align: left;
+    width: 100%;
+    padding:  60px 50px;
+    line-height: 1.5;
+    font-family: "Source Code Pro", monospace;
+    font-size:16px ;
+
+}
+.HI{
+    color: yellow;
+    font-size:2em;
+    font-weight:200;
+}
+.hello{
+    color: white;
+    font-size: 2em;
+    font-family: "Poppins", sans-serif;
+}
+
+.name{
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-size: 3em;
+  color: yellow;
+}
+.hello,.name{
+    display: inline-block;
+    font-size: 2.5em;
+}
+
+.about{
+    font-size: 2.5em;
+    color: white;
+}
+.devPic{
+    padding:0px;
+    justify-content: flex-end;
+    display: flex;
+    align-items: center;
+    width: 50%;
+    padding-right: 20px;
+
+}
+.divPic img{
+    height:58vh;
+    width: auto;
+}
+.buttons{
+    margin-top: 2.2em;
+    font-size:16px ;
+}
+.btn{
+    margin:3px 3px;
+    padding: 10px 20px;
+    font-size: 2em;
+    cursor: pointer;
+    border-radius:22px ;
+    color:black;
+    background-color: yellow;
+    font-weight: bold;
+
+}
+.btn-sm{
+    font-size: 14px;
+    padding:10px 19px;
+    margin: 12px 0;
+}
+.btn:hover{
+      background-color: black;
+    color:yellow;
+}
+.divPic img{
+    height: 58vh;
+}
+.moreabout{
+        font-family: "Source Code Pro", monospace;
+        font-size: 2em;
+        margin: 23px;
+    }
+.contactForm{
+     font-family: "Playfair Display",serif ;
+     padding:0 34px;
+     margin:  88px;
+}
+.contactForm h1{
+       font-family: "Source Code Pro", monospace;
+       text-align: center;
+     /*  padding: 12px 0;*/
+}
+.contactForm form div{
+    padding:10px 0;
+    display: flex;
+    flex-direction: column;
+}
+.contactForm form div input{
+   /* width: 16vw;*/
+    border-radius: 5px;
+    margin: 6px 0;
+    padding: 3px;
+}
+.contactForm form {
+  margin: 0 40px;
+}
+#emailHelp{
+    font-size: 11px;
+    color: midnightblue; 
+    margin: 0 5px;
+    display: block;
+    padding: 3px 0 0 0;
+}
+#form-check{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    gap: 8px;
+    margin-top: 10px;
+}
+#form-check input{
+     width: 24px;
+    margin: 0;
+    padding: 0;
+     height:18px;
+     vertical-align: middle;
+}
+.form-check-label{
+   margin: 0;
+    padding: 0;
+     vertical-align: middle;
+     font-size: 16px;
+}
+.contactForm.btn{
+    margin-top: 10px;
+    padding:10px 20px;
+}
+.contactForm .form-check .form-check-input {
+    margin: 0;
+}
+.blogItem{
+    margin: 20px;
+     font-family: "Playfair Display",serif ;
+    /* padding:15px 40px;*/
+}
+.blogContainer{
+   /* margin: 40px 88px ;*/
+   padding: 20px;
+   display: flex;
+   flex-direction: column;
+}
+ h1{
+    font-family: "Playfair Display",serif ;
+    margin: 10px;
+}
+p{
+     font-family: "Source Code Pro", monospace;
+}
+.intro{
+    margin: 0 88px;
+}
+.intro h2{
+    font-family: "Playfair Display",serif ;
+    margin: 12px;
+}
+.intro p{
+    font-family: "Source Code Pro", monospace;
+    margin: 12px;
+}
+.skillcontainer{
+       padding: 12px;
+}
+.skillitem{
+    display: flex;
+   align-items: center;
+   font-family: "Source Code Pro", monospace;
+   font-weight: 900;
+}
+.skill{
+    width:265px ;
+    height: 4px;
+    background-color: red;
+    border: 2px solid black;
+}
+.hundred{
+    width:265px ;
+    background-color:firebrick;
+}
+.fifty{
+    width: 125px;
+    background-color: coral;
+}
+.t5{
+    width: 75px;
+    background-color: cornsilk;
+}
+.sidebarGo{
+    transform: translate(-443px,0px);
+    position: absolute;
+    background-color: hsl(227, 27%,25%);
+}
+.ham1{
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+}
+.ham{
+ margin-top: 10px;
+margin-left: 10px;
+width: 55px;
+background-color: hsl(227, 22%,40%);
+
+}
+.cross{
+    margin-left: 145px;
+    width: 45px;
+   background-color: hsl(227, 20%,25%);
+   position: absolute;
+}
+
+
+@media (max-width: 768px) {
+    body {
+        padding: 0 10px;
+    }
+
+    h1 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+
+    /* Sidebar mobile styles */
+   /* .sidebar {
+        position: fixed;
+        top: 0;
+        left: -250px;
+        width: 220px;
+        height: 100%;
+        background: #222;
+        padding-top: 60px;
+        transition: left 0.3s ease;
+        z-index: 1000;
+    }*/
+
+    /* Sidebar visible */
+    .sidebar.active {
+        left: 0;
+    }
+
+    /* Main content full width on mobile */
+    .main {
+        width: 100%;
+    }
+
+    /* Hamburger icon container */
+    .ham1 {
+        padding: 10px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    /* Buttons shrink */
+    .btn, .btn-sm {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+
+    /* Universal section padding */
+    .blogContainer,
+    .serviceContainer,
+    .infoContainer {
+        padding: 10px;
+        margin: 0 auto;
+    }
+
+    .blogItem,
+    .serviceItem,
+    .infoItem {
+        margin-bottom: 20px;
+        padding: 15px;
+        box-sizing: border-box;
+    }
+}
+ 
+
+
+.devPic{
+    display: flex;
+}
+.intro, .blogContainer,.contactForm{
+    margin: 50px 8px;
+}
+.devInfo{
+    font-size: 16px;
+}
+.buttons{
+    font-size: 16px;
+}
+.services {
+        max-width: 800px;
+        padding: 70px 90px;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+}
+
+
+
+.services h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: black; 
+}
+
+.services > p {
+    font-size: 1rem;
+    color: black; 
+    margin-bottom: 30px;
+}
+
+.service-list {
+    display: flex;
+    flex-direction: column; 
+    gap: 25px; 
+}
+
+.service {
+    background: none; 
+    padding: 0;
+}
+
+.service h2 {
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+    color: black; 
+}
+
+.service p {
+    font-size: 0.95rem;
+    color: black; 
+    line-height: 1.4;
+}
